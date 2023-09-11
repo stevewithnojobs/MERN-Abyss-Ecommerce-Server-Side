@@ -11,7 +11,7 @@ route.post("/password/forgot",forgotPassword)
 route.put("/password/reset/:token",resetPassword)
 route.get("/me",isAuthenticatedUser,getUserDetail)
 route.put("/password/update",isAuthenticatedUser,updatePassword)
-route.put("/me/profile",isAuthenticatedUser,updateProfile)
+route.put("/me/update",isAuthenticatedUser,updateProfile)
 
 route.put("/admin/user/:id",isAuthenticatedUser,authorizeRole("admin"),updateUserRole)
 
